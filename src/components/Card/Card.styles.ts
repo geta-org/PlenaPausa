@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const CardWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
-  width: calc(100% - 88px);
   padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid #A35BA5;
+  border-radius: 16px;
+  flex: 1 1 calc(33.33% - 48px);
+  width: calc(100% - 88px);
+  
 `;
 
 export const CardBody = styled.div`
@@ -14,9 +17,10 @@ export const CardBody = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   gap: 16px;
-  margin-left: 24px;
 
-  > button {
+  >a> button {
+    color: #ffffff;
+    background-color: #A35BA5;
     margin-top: auto;
   }
 `;
@@ -28,7 +32,7 @@ export const TitleText = styled.h3`
 `;
 
 export const DescriptionText = styled.p`
-  color: #757575;
+  color: #1e1e1e;
   font-weight: 400;
   font-size: 16px;
 `;

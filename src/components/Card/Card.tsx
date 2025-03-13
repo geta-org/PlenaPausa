@@ -9,6 +9,7 @@ import {
 import { Button } from "../components";
 
 type Props = {
+  fileToDownload: string;
   title: string;
   description: string;
   iconRef: string;
@@ -17,6 +18,7 @@ type Props = {
 };
 
 const Card: React.FC<Props> = ({
+  fileToDownload,
   title,
   description,
   iconRef,
@@ -30,11 +32,13 @@ const Card: React.FC<Props> = ({
         <TitleText>{title}</TitleText>
         <DescriptionText>{description}</DescriptionText>
         {buttonLabel && (
-          <Button
-            label={buttonLabel}
-            onClick={buttonOnClick || (() => console.log("hi"))}
-            primary={false}
-          />
+          <a href={fileToDownload} download>
+            <Button
+              label={buttonLabel}
+              onClick={buttonOnClick ? buttonOnClick : () => {}}
+              primary={false}
+            />
+          </a>
         )}
       </CardBody>
     </CardWrapper>

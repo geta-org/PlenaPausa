@@ -4,6 +4,7 @@ import {
   Button,
   Form,
   Accordion,
+  Card
 } from "../components/components";
 import {
   Hero,
@@ -25,6 +26,9 @@ import QuestionLogo from "../assets/question.svg?react";
 import Img1 from "../assets/img/img1.png";
 import Img2 from "../assets/img/img2.png";
 import Img3 from "../assets/img/img3.png";
+import Monitor from "../assets/img/Agenda para monitoramento da menopausa.pdf";
+import Info1 from "../assets/img/Infographic resume.jpeg";
+import Info2 from "../assets/img/Infographic symptoms.jpeg";
 
 function App() {
   return (
@@ -757,6 +761,35 @@ function App() {
           <p>Artigos científicos indexados em bases de dados como PubMed e SciELO</p>
         </Accordion>
       </AccordionContainer>
+      <hr />
+      <ResourcesContainer id="resources">
+        <SectionHeader>
+          <SectionTitle>Recursos adicionais</SectionTitle>
+        </SectionHeader>
+        <InfoGrid>
+        <Card 
+          title={"Agenda para monitoramento"} 
+          description={"Uma agenda personalizada pode ser uma ferramenta valiosa para acompanhar as mudanças do corpo durante o climatério e identificar padrões."} 
+          fileToDownload={Monitor}
+          iconRef={""} 
+          buttonLabel={"Faça o download"}
+        />
+        <Card 
+          title={"Infográfico: Entendendo a menopausa"} 
+          description={"Infográfico em formato de cartilha para descobrir compartilhar. Contém informações essenciais sobre a menopausa e suas repercussões."} 
+          fileToDownload={Info1}
+          iconRef={""} 
+          buttonLabel={"Faça o download"}
+        />
+        <Card 
+          title={"Infográfico: Sintomas da menopausa"} 
+          description={"Impactos Multissêmicos da Menopausa: sintomas e alterações corporais que podem ser acontecer e o que você pode esperar durante a menopausa."} 
+          fileToDownload={Info2}
+          iconRef={""} 
+          buttonLabel={"Faça o download"}
+        />
+        </InfoGrid>
+      </ResourcesContainer>
     </>
   );
 }

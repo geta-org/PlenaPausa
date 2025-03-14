@@ -28,5 +28,6 @@ export const AccordionTitle = styled.h3`
 
 export const AccordionText = styled.div<TextProps>`
   display: ${({ expanded }) => (expanded ? "block" : "none")};
+  font-size: 20px;
   padding: 0px 24px 16px 24px;
 `;

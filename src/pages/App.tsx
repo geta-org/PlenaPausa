@@ -761,7 +761,6 @@ function App() {
           <p>Artigos científicos indexados em bases de dados como PubMed e SciELO</p>
         </Accordion>
       </AccordionContainer>
-      <hr />
       <ResourcesContainer id="resources">
         <SectionHeader>
           <SectionTitle>Recursos adicionais</SectionTitle>

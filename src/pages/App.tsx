@@ -1,7 +1,6 @@
 import {
   InfoCard,
   Navbar,
-  Button,
   Form,
   Accordion,
   Card
@@ -49,10 +48,13 @@ function App() {
         <SectionHeader>
           <SectionTitle>Sobre Nós</SectionTitle>
           <SectionDescription>
-            <p>
-              Nossa misão e objetivos, e a importância de falar sobre menopausa.
-            </p>
-            <p>Nossa equipe por trás do projeto e aqueles que o apoiam.</p>
+            <p>Este site foi criado com carinho e dedicação pela equipe de pesquisa que investiga o uso do LASER e fitoterapia no manejo dos sintomas da menopausa,</p>
+            <p>do Programa Interinstitucional de Pós-Graduação em Ciências Fisiológicas da Universidade Federal de São Carlos e UNESP,</p>
+            <p>com apoio do Grupo de Pesquisa de Engenharia e Ciências da Computação do Centro Universitário do Estado do Pará (CESUPA),</p>
+            <p>para compartilhar Informações sobre a menopausa com conteúdo educativo sobre saúde da mulher, bem-estar e qualidade de vida.</p>
+          </SectionDescription>
+          <SectionDescription>
+          Nossa equipe por trás do projeto e aqueles que o apoiam.
           </SectionDescription>
         </SectionHeader>
         <AboutUsImages>
@@ -60,11 +62,6 @@ function App() {
           <img src={Img2} />
           <img src={Img3} />
         </AboutUsImages>
-        <Button
-          label="Veja mais"
-          primary
-          onClick={() => console.log("about-us-placeholder")}
-        />
         <hr />
       </AboutUs>
       <FormContainer id="form">
@@ -77,6 +74,9 @@ function App() {
               passar por, e quem pode ajudar.
             </p>
           </SectionDescription>
+          <SectionDescription>
+          <p>Caso não esteja sentindo algum dos sintomas, não precisa marcar</p>
+          </SectionDescription>
         </SectionHeader>
         <Form />
       </FormContainer>
@@ -87,11 +87,11 @@ function App() {
         <InfoGrid>
           <InfoCard
             title="Avalie seus sintomas"
-            description="Os tipos principais são: Natural, Induzida e Precoce. Verifique o tipo que você se encontra e entenda melhor como buscar acompanhamento médico"
+            description="Existem diversos sintomas que podem aparecer durante a menopausa. Verifique como você se encontra e entenda melhor como buscar acompanhamento médico"
           />
           <InfoCard
             title="Conhecendo o que é"
-            description="O que é menopausa? O que é climatério? Como saber se estou na menopausa? O que acontece com os hormônios? Relação entre menpausa e  aparecimento de doenças"
+            description=" Está em dúvida sobre se você está na menopausa? Não sabe exatamente o que é menopausa e o que acontece com o seu corpo nesse período? Aqui nós explicamos"
           />
           <InfoCard
             title="Bem-estar"
@@ -103,11 +103,7 @@ function App() {
           />
           <InfoCard
             title="Material de apoio"
-            description="Mitos e verdades. Manuais. Fitoterápicos para Aliviar os Sintomas da Menopausa"
-          />
-          <InfoCard
-            title="Recursos adicionais"
-            description="Guias. Infográficos. Associações"
+            description="Mitos e verdades. Fitoterápicos para Aliviar os Sintomas da Menopausa. Recursos adicionais: Manuais; Guias; Infográficos; Associações"
           />
         </InfoGrid>
       </ResourcesContainer>
@@ -125,14 +121,15 @@ function App() {
         </SectionHeader>
         <Accordion title="O que é menopausa?">
             A menopausa é marcada pela ausência de menstruação por 12 meses consecutivos.
-            Antes disso, a mulher passa por uma fase de transição chamada climatério, que pode incluir diversos sintomas.
+            Antes disso, a mulher passa por uma fase de transição chamada climatério, que pode incluir diversos sintomas. A menopausa ocorre, em média, aos 50 anos.
         </Accordion>
         <Accordion title="O que é climatério?">
-            No climatério há uma diminuição das funções ovarianas, fazendo com que os ciclos menstruais se tornem irregulares, até cessarem por completo.
-            A menopausa ocorre, em média, aos 50 anos. O climatério tem início por volta dos 40 anos e se estende até os 65 anos.
+            O climatério há uma diminuição das funções ovarianas, fazendo com que os ciclos menstruais se tornem irregulares, até cessarem por completo.
+            O climatério inicia antes e se estende durante e até após a menopausa, por volta dos 40 anos e pode se estender até os 65 anos.
         </Accordion>
         <Accordion title="Quais são os sintomas mais comuns?">
-            Os sintomas mais comuns são: Menstruação irregular, Ondas de calor, Alteração no sono, Oscilações de humor, Mudanças urogenitais.
+            <p>Os sintomas mais comuns no climatério são: Menstruação irregular, Ondas de calor, Alteração no sono, Oscilações de humor.</p><br></br>
+            <p>Os sintomas mais comuns na menopausa são: Ondas de calor, Alteração no sono, Oscilações de humor, Alterações urogenitais.</p>
         </Accordion>
         <Accordion title="O que acontece com os hormônios?">
             No climatério, os níveis de estrogênio e progesterona, hormônios femininos, diminuem de forma permanente.
@@ -182,7 +179,7 @@ function App() {
           </SectionDescription>
         </SectionHeader>
         <Accordion title="Terapêutica estrogênica local">
-         Quando o tratamento estrogênico é liberado diretamente na vagina. É um tratamento estrogênico local e não é absorvido para o resto do corpo.
+         Quando o tratamento estrogênico é liberado diretamente na vagina. É um tratamento estrogênico local.
          Pode ser na forma de anel, creme ou pessário introduzido na vagina.
         </Accordion>
         <Accordion title="Terapêutica hormonal sistêmica">
@@ -246,7 +243,7 @@ function App() {
           <p>-Alívio de dores: A fisioterapia pode aliviar dores nas articulações e nos músculos, comuns na menopausa.</p>
         </Accordion>
         <Accordion title="Fitoterapeuta">
-         O fitoterapeuta é um profissional de saúde especializado no uso de plantas medicinais para tratar, prevenir ou aliviar doenças.
+         O fitoterapeuta é um profissional de saúde (ex.: médico, farmacêutico, nutricionista, fisioterapeuta, etc.) especializado no uso de plantas medicinais para tratar, prevenir ou aliviar doenças.
          Por meio de uma avaliação do paciente, considerando seu histórico clínico, sintomas e necessidades,
          ele indica o uso de remédios naturais à base de plantas e ervas medicinais que podem ser utilizadas para ajudar a aliviar os sintomas da menopausa de forma segura e com devido acompanhamento.
         </Accordion>
@@ -303,8 +300,13 @@ function App() {
           <p>-Tribulus terrestris (Tribulus): Possui fitoestrógenos e é usada em suplementos para a saúde hormonal.</p><br></br>
           <p>-Brócolis: Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
           <p>-Chá verde: Também possui fitoestrógenos que podem ter efeitos benéficos na saúde hormonal.</p><br></br>
+          <p>
+            -Amora negra (Morus nigra): Popularmente conhecida como amora, é uma planta que pode ser usada para tratar os sintomas da menopausa.
+            As folhas da amora são ricas em fitoestrógenos e podem ser consumidas na forma de chá ou tintura.
+            Pode ajudar a reduzir as ondas de calor, melhorar a memória e a qualidade do sono.
+            </p><br></br>
           <br></br><p>
-            Essas plantas podem ser encontradas em forma de suplementos ou consumidas diretamente através de alimentos e chás.
+            Essas plantas podem ser encontradas em forma de medicamentos fitoterápicos, suplementos ou consumidas diretamente por meio de alimentos e chás.
             No entanto, é sempre importante consultar um médico antes de iniciar qualquer suplementação, especialmente se houver
             histórico de câncer de mama ou outras condições hormonais.
           </p><br></br>
@@ -395,6 +397,7 @@ function App() {
             Através da estimativa do Índice de Massa Corporal (IMC). É feito por meio da divisão do peso (em kg) pela altura (em metros) ao quadrado.
             A classificação da obesidade no Brasil é feita com base no Índice de Massa Corporal (IMC), de acordo com o seguinte padrão:
           </p><br></br>
+          <p>Fórmula para calcular o índice de massa corporal:  IMC = peso (kg) / (altura (m) x altura (m))</p>
           <p>-Abaixo de 18,5: Abaixo do peso</p>
           <p>-Entre 18,5 e 24,9: Peso normal</p>
           <p>-Entre 25 e 29,9: Sobrepeso</p>
@@ -498,6 +501,17 @@ function App() {
             como frutas, legumes, verduras, grãos integrais, peixes e aves.
           </p><br></br>
           <p>Restrição Calórica: Manter um peso saudável é fundamental para prevenir diversas doenças, incluindo diabetes e doenças cardiovasculares.</p>
+          <br></br>
+          <p>
+            Uso do sal de ervas: Para reduzir o consumo do sódio e prevenir hipertensão. Uma receita básica leva
+            os seguintes ingredientes: 1/2 xícara de sal marinho grosso, 1/4 xícara de alecrim seco, 1/4 xícara de orégano seco,
+            1/4 xícara de manjericão seco.
+          </p>
+          <p>
+            Modo de preparo: Em um processador de alimentos ou liquidificador,
+            coloque todos os ingredientes e pulse até que as ervas estejam bem picadas e misturadas ao sal.
+            Transfira o sal de ervas para um pote de vidro com tampa e armazene em local fresco e seco.
+          </p>
         </Accordion>
         <Accordion title="Outros Cuidados">
           <p>Hidratação: Beber bastante água ao longo do dia é essencial para manter o organismo funcionando corretamente.</p><br></br>
@@ -669,8 +683,9 @@ function App() {
             pode contribuir para a melhoria do humor.
           </p><br></br>
           <p>
-            Sono de Qualidade: Priorizar o sono é fundamental para a saúde mental.
-            Estabeleça uma rotina relaxante antes de dormir e evite o uso de eletrônicos nas horas que antecedem o sono.
+            Higiene do Sono: Priorizar o sono é fundamental para a saúde mental.
+            Estabeleça horários regulares para dormir e acordar. Crie uma rotina relaxante e um ambiente propício antes de dormir e evite estimulantes, como
+            o uso de eletrônicos nas horas que antecedem o sono, cafeína, álcool, e nicotina.
           </p>
         </Accordion>
         <Accordion title="Reconhecendo os Sinais de Alerta">

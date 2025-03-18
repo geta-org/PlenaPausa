@@ -16,15 +16,12 @@ import {
   SectionTitle,
   SectionDescription,
   ResourcesContainer,
-  AboutUsImages,
   FormContainer,
   AccordionContainer,
+  Bold,
 } from "./App.styles";
 import MenoLogo from "../assets/logo.svg?react";
 import QuestionLogo from "../assets/question.svg?react";
-import Img1 from "../assets/img/img1.png";
-import Img2 from "../assets/img/img2.png";
-import Img3 from "../assets/img/img3.png";
 import Monitor from "../assets/img/Agenda para monitoramento da menopausa.pdf";
 import Info1 from "../assets/img/Infographic resume.jpeg";
 import Info2 from "../assets/img/Infographic symptoms.jpeg";
@@ -53,15 +50,7 @@ function App() {
             <p>com apoio do Grupo de Pesquisa de Engenharia e Ciências da Computação do Centro Universitário do Estado do Pará (CESUPA),</p>
             <p>para compartilhar Informações sobre a menopausa com conteúdo educativo sobre saúde da mulher, bem-estar e qualidade de vida.</p>
           </SectionDescription>
-          <SectionDescription>
-          Nossa equipe por trás do projeto e aqueles que o apoiam.
-          </SectionDescription>
         </SectionHeader>
-        <AboutUsImages>
-          <img src={Img1} />
-          <img src={Img2} />
-          <img src={Img3} />
-        </AboutUsImages>
         <hr />
       </AboutUs>
       <FormContainer id="form">
@@ -142,21 +131,21 @@ function App() {
           <SectionTitle>Os Principais Tipos de Menopausa</SectionTitle>
         </SectionHeader>
         <Accordion title="Menopausa Natural">
-          <p>O que é: É o tipo mais comum, ocorrendo espontaneamente entre os 45 e 55 anos, devido à depleção natural dos óvulos nos ovários.</p>
-          <p>Causas: Envelhecimento fisiológico dos ovários.</p>
+          <p><Bold>O que é:</Bold> É o tipo mais comum, ocorrendo espontaneamente entre os 45 e 55 anos, devido à depleção natural dos óvulos nos ovários.</p>
+          <p><Bold>Causas:</Bold> Envelhecimento fisiológico dos ovários.</p>
         </Accordion>
         <Accordion title="Menopausa Induzida">
-            <p>O que é: Ocorre precocemente devido a fatores externos, como cirurgias ou tratamentos médicos.</p>
-            <p>Causas:</p><br></br>
-            <p>-Cirúrgica: remoção dos ovários (ooforectomia) por razões médicas;</p>
-            <p>-Tratamentos: quimioterapia, radioterapia, ou outros tratamentos que danificam os ovários.</p>
+            <p><Bold>O que é:</Bold> Ocorre precocemente devido a fatores externos, como cirurgias ou tratamentos médicos.</p>
+            <p><Bold>Causas:</Bold></p><br></br>
+            <p><Bold>-Cirúrgica:</Bold> remoção dos ovários (ooforectomia) por razões médicas;</p>
+            <p><Bold>-Tratamentos:</Bold> quimioterapia, radioterapia, ou outros tratamentos que danificam os ovários.</p>
         </Accordion>
         <Accordion title="Menopausa Precoce">
-          <p>O que é: Ocorre antes dos 40 anos, tanto de forma natural quanto induzida.</p>
-          <p>Causas:</p><br></br>
-          <p>-Genética: Mutações genéticas podem levar à falência ovariana precoce.</p>
-          <p>-Autoimunes: Doenças autoimunes podem atacar os ovários.</p>
-          <p>-Iatrogênica: Causada por tratamentos médicos.</p>
+          <p><Bold>O que é:</Bold> Ocorre antes dos 40 anos, tanto de forma natural quanto induzida.</p>
+          <p><Bold>Causas:</Bold></p><br></br>
+          <p><Bold>-Genética:</Bold> Mutações genéticas podem levar à falência ovariana precoce.</p>
+          <p><Bold>-Autoimunes:</Bold> Doenças autoimunes podem atacar os ovários.</p>
+          <p><Bold>-Iatrogênica:</Bold> Causada por tratamentos médicos.</p>
         </Accordion>
         <hr />
       </AccordionContainer>
@@ -214,33 +203,33 @@ function App() {
            Ele é o especialista em saúde reprodutiva feminina e pode:
          </p><br></br>
          <p>
-           -Diagnosticar a menopausa: Através de exames clínicos e de laboratório,
+           <Bold>Diagnosticar a menopausa:</Bold> Através de exames clínicos e de laboratório,
            o ginecologista confirmará se você está passando pela menopausa e avaliará a intensidade dos sintomas.
          </p><br></br>
          <p>
-           -Prescrever tratamentos: Dependendo dos seus sintomas e condições de saúde,
+           <Bold>Prescrever tratamentos:</Bold> Dependendo dos seus sintomas e condições de saúde,
            o ginecologista poderá indicar tratamentos como a terapia de reposição hormonal (TRH),
            medicamentos para aliviar as ondas de calor e outros tratamentos.
          </p><br></br>
-         <p>-Acompanhamento: O ginecologista realizará acompanhamentos regulares para monitorar sua saúde e ajustar o tratamento, se necessário.</p>
+         <p><Bold>Acompanhamento:</Bold> O ginecologista realizará acompanhamentos regulares para monitorar sua saúde e ajustar o tratamento, se necessário.</p>
         </Accordion>
         <Accordion title="Endocrinologista">
          <p>O endocrinologista é especialista em hormônios. Ele pode ser consultado em casos mais complexos, como:</p><br></br>
-         <p>-Desequilíbrios hormonais: O endocrinologista pode ajudar a identificar e tratar desequilíbrios hormonais que podem estar causando sintomas mais intensos.</p><br></br>
-         <p>-Tratamento personalizado: Ele pode oferecer um tratamento mais personalizado, considerando seus outros problemas de saúde e histórico médico.</p>
+         <p><Bold>Desequilíbrios hormonais:</Bold> O endocrinologista pode ajudar a identificar e tratar desequilíbrios hormonais que podem estar causando sintomas mais intensos.</p><br></br>
+         <p><Bold>Tratamento personalizado:</Bold> Ele pode oferecer um tratamento mais personalizado, considerando seus outros problemas de saúde e histórico médico.</p>
         </Accordion>
         <Accordion title="Nutricionista">
          <p>Uma alimentação equilibrada é fundamental para o bem-estar durante a menopausa. O nutricionista pode te ajudar a:</p><br></br>
-         <p>-Planejar uma dieta: Ele irá elaborar um plano alimentar personalizado, considerando seus gostos e necessidades nutricionais.</p><br></br>
-         <p>-Controlar os sintomas: Uma dieta adequada pode ajudar a controlar sintomas como ondas de calor, insônia e alterações de humor.</p>
+         <p><Bold>Planejar uma dieta:</Bold> Ele irá elaborar um plano alimentar personalizado, considerando seus gostos e necessidades nutricionais.</p><br></br>
+         <p><Bold>Controlar os sintomas:</Bold> Uma dieta adequada pode ajudar a controlar sintomas como ondas de calor, insônia e alterações de humor.</p>
         </Accordion>
         <Accordion title="Fisioterapeuta">
           <p>A fisioterapia pode ser muito benéfica para aliviar os sintomas da menopausa, como:</p><br></br>
           <p>
-            -Fortalecimento muscular: A fisioterapia pode ajudar a fortalecer os músculos do assoalho pélvico,
+            <Bold>Fortalecimento muscular:</Bold> A fisioterapia pode ajudar a fortalecer os músculos do assoalho pélvico,
             melhorando a incontinência urinária e o prazer sexual.
           </p><br></br>
-          <p>-Alívio de dores: A fisioterapia pode aliviar dores nas articulações e nos músculos, comuns na menopausa.</p>
+          <p><Bold>Alívio de dores:</Bold> A fisioterapia pode aliviar dores nas articulações e nos músculos, comuns na menopausa.</p>
         </Accordion>
         <Accordion title="Fitoterapeuta">
          O fitoterapeuta é um profissional de saúde (ex.: médico, farmacêutico, nutricionista, fisioterapeuta, etc.) especializado no uso de plantas medicinais para tratar, prevenir ou aliviar doenças.
@@ -249,8 +238,8 @@ function App() {
         </Accordion>
         <Accordion title="Psicólogo">
          <p>As mudanças hormonais da menopausa podem afetar o humor e o bem-estar emocional. O psicólogo pode te ajudar a:</p><br></br>
-         <p>-Lidar com as emoções: A terapia pode te ajudar a lidar com as mudanças emocionais e a desenvolver estratégias para lidar com o estresse.</p><br></br>
-         <p>-Melhorar a qualidade de vida: O psicólogo pode te ensinar técnicas de relaxamento e meditação para melhorar sua qualidade de vida.</p>
+         <p><Bold>Lidar com as emoções:</Bold> A terapia pode te ajudar a lidar com as mudanças emocionais e a desenvolver estratégias para lidar com o estresse.</p><br></br>
+         <p><Bold>Melhorar a qualidade de vida:</Bold> O psicólogo pode te ensinar técnicas de relaxamento e meditação para melhorar sua qualidade de vida.</p>
         </Accordion>
         <SectionDescription>
           Quando procurar ajuda? Se você está sentindo desconforto ou suas
@@ -276,32 +265,31 @@ function App() {
         <Accordion title="Principais Fitoterápicos Utilizados na Menopausa">
           <p>Diversos fitoterápicos demonstraram potencial para aliviar os sintomas da menopausa. Alguns dos mais utilizados são:</p><br></br>
           <p>
-          -Copo-de-leite (Actaea racemosa): É um dos fitoterápicos mais estudados para o tratamento dos sintomas da menopausa.
+          <Bold>-Copo-de-leite (Actaea racemosa):</Bold> É um dos fitoterápicos mais estudados para o tratamento dos sintomas da menopausa.
           Possui ação semelhante ao estrogênio, ajudando a reduzir fogachos, suores noturnos e irritabilidade.
           </p><br></br>
           <p>
-          -Soja: Rica em isoflavonas, substâncias com estrutura semelhante ao estrogênio,
+          <Bold>-Soja e seus derivados:</Bold> Rica em isoflavonas, que são um tipo de fitoestrogênio, substâncias com estrutura semelhante ao estrogênio,
           a soja pode ajudar a aliviar os sintomas vasomotores (fogachos e suores) e outros sintomas da menopausa.
           </p><br></br>
-          <p>-Trevo vermelho: Também rico em isoflavonas, o trevo vermelho pode ajudar a reduzir a frequência e a intensidade dos fogachos.</p><br></br>
+          <p><Bold>-Trevo vermelho:</Bold> Também rico em isoflavonas, o trevo vermelho pode ajudar a reduzir a frequência e a intensidade dos fogachos.</p><br></br>
           <p>
-            -Sálvia: Possui propriedades antioxidantes e anti-inflamatórias que podem ajudar a aliviar os sintomas da menopausa,
+            <Bold>-Sálvia:</Bold> Possui propriedades antioxidantes e anti-inflamatórias que podem ajudar a aliviar os sintomas da menopausa,
             como suores noturnos e irritabilidade.
           </p><br></br>
-          <p>-Ginseng: Ajuda a reduzir a fadiga e a melhorar a concentração, sintomas comuns na menopausa.</p><br></br>
-          <p>-Soja e seus derivados: A soja é uma das fontes mais ricas em isoflavonas, que são um tipo de fitoestrogênio.</p><br></br>
-          <p>-Crataegus (Espinheiro-alvar): Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
+          <p><Bold>-Ginseng:</Bold> Ajuda a reduzir a fadiga e a melhorar a concentração, sintomas comuns na menopausa.</p><br></br>
+          <p><Bold>-Crataegus (Espinheiro-alvar):</Bold> Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
           <p>
-            -Cimicifuga (Ervilhas-de-são-cristóvão): Também conhecida como Erva-de-são-cristóvão,
+            <Bold>-Cimicifuga (Ervilhas-de-são-cristóvão):</Bold> Também conhecida como Erva-de-são-cristóvão,
             possui fitoestrógenos que podem ajudar a aliviar sintomas da menopausa.
           </p><br></br>
-          <p>-Vitex agnus-castus (Agnus castus): Conhecida por seus efeitos equilibradores hormonais.</p><br></br>
-          <p>-Angelica sinensis (Dong Quai): Contém fitoestrogênios e é usada tradicionalmente para equilibrar os hormônios.</p><br></br>
-          <p>-Tribulus terrestris (Tribulus): Possui fitoestrógenos e é usada em suplementos para a saúde hormonal.</p><br></br>
-          <p>-Brócolis: Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
-          <p>-Chá verde: Também possui fitoestrógenos que podem ter efeitos benéficos na saúde hormonal.</p><br></br>
+          <p><Bold>-Vitex agnus-castus (Agnus castus):</Bold> Conhecida por seus efeitos equilibradores hormonais.</p><br></br>
+          <p><Bold>-Angelica sinensis (Dong Quai):</Bold> Contém fitoestrogênios e é usada tradicionalmente para equilibrar os hormônios.</p><br></br>
+          <p><Bold>-Tribulus terrestris (Tribulus):</Bold> Possui fitoestrógenos e é usada em suplementos para a saúde hormonal.</p><br></br>
+          <p><Bold>-Brócolis:</Bold> Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
+          <p><Bold>-Chá verde:</Bold> Também possui fitoestrógenos que podem ter efeitos benéficos na saúde hormonal.</p><br></br>
           <p>
-            -Amora negra (Morus nigra): Popularmente conhecida como amora, é uma planta que pode ser usada para tratar os sintomas da menopausa.
+            <Bold>-Amora negra (Morus nigra):</Bold> Popularmente conhecida como amora, é uma planta que pode ser usada para tratar os sintomas da menopausa.
             As folhas da amora são ricas em fitoestrógenos e podem ser consumidas na forma de chá ou tintura.
             Pode ajudar a reduzir as ondas de calor, melhorar a memória e a qualidade do sono.
             </p><br></br>
@@ -316,50 +304,50 @@ function App() {
           </p><br></br>
           <p>Adaptógenos Seguros</p>
           <p>Alguns adaptógenos que podem ajudar a aliviar os sintomas da menopausa sem efeitos estrogênicos incluem:</p><br></br>
-          <p>-Rhodiola rosea: Pode ajudar a reduzir a fadiga e melhorar o humor.</p>
-          <p>-Eleuthero (Ginseng siberiano): Pode ajudar a aumentar a resistência ao estresse.</p>
-          <p>-Ashwagandha: Conhecida por suas propriedades calmantes e equilibradoras.</p>
-          <p>-Schisandra chinensis: Pode ajudar a melhorar a resistência ao estresse e a função cognitiva.</p>
+          <p><Bold>-Rhodiola rosea:</Bold> Pode ajudar a reduzir a fadiga e melhorar o humor.</p>
+          <p><Bold>-Eleuthero (Ginseng siberiano):</Bold> Pode ajudar a aumentar a resistência ao estresse.</p>
+          <p><Bold>-Ashwagandha:</Bold> Conhecida por suas propriedades calmantes e equilibradoras.</p>
+          <p><Bold>-Schisandra chinensis:</Bold> Pode ajudar a melhorar a resistência ao estresse e a função cognitiva.</p>
         </Accordion>
         <Accordion title="Como os Fitoterápicos atuam?">
           <p>Os fitoterápicos atuam de diversas formas para aliviar os sintomas da menopausa:</p><br></br>
           <p>
-            Mimetizando a ação dos hormônios: Algumas substâncias presentes nos fitoterápicos possuem estrutura semelhante aos hormônios femininos,
+            <Bold>Mimetizando a ação dos hormônios:</Bold> Algumas substâncias presentes nos fitoterápicos possuem estrutura semelhante aos hormônios femininos,
             ajudando a equilibrar os níveis hormonais e a reduzir os sintomas.
           </p><br></br>
           <p>
-            Aumentando a produção de neurotransmissores: Alguns fitoterápicos podem aumentar a produção de neurotransmissores como a serotonina e a dopamina,
+            <Bold>Aumentando a produção de neurotransmissores:</Bold> Alguns fitoterápicos podem aumentar a produção de neurotransmissores como a serotonina e a dopamina,
             que estão relacionados ao humor e ao sono.
           </p><br></br>
           <p>
-            Ação antioxidante e anti-inflamatória: Muitas plantas medicinais possuem propriedades antioxidantes e anti-inflamatórias,
+            <Bold>Ação antioxidante e anti-inflamatória:</Bold> Muitas plantas medicinais possuem propriedades antioxidantes e anti-inflamatórias,
             que ajudam a combater os radicais livres e a reduzir a inflamação, processos que podem contribuir para o desenvolvimento dos sintomas da menopausa.
           </p>
         </Accordion>
         <Accordion title="Benefícios dos Fitoterápicos">
           <p>
-            Alívio natural dos sintomas: Os fitoterápicos oferecem uma alternativa natural para o tratamento dos sintomas da menopausa,
+            <Bold>Alívio natural dos sintomas:</Bold> Os fitoterápicos oferecem uma alternativa natural para o tratamento dos sintomas da menopausa,
             com menos efeitos colaterais em comparação com os tratamentos hormonais.
           </p><br></br>
           <p>
-            Melhora da qualidade de vida: Ao aliviar os sintomas,
+            <Bold>Melhora da qualidade de vida:</Bold> Ao aliviar os sintomas,
             os fitoterápicos podem melhorar significativamente a qualidade de vida das mulheres durante a menopausa.
           </p><br></br>
           <p>
-            Prevenção de doenças crônicas: Algumas plantas medicinais possuem propriedades que podem ajudar a prevenir doenças crônicas,
+            <Bold>Prevenção de doenças crônicas:</Bold> Algumas plantas medicinais possuem propriedades que podem ajudar a prevenir doenças crônicas,
             como doenças cardiovasculares e osteoporose.
           </p>
         </Accordion>
         <Accordion title="Considerações Importantes">
           <p>
-            Consulta médica: É fundamental consultar um médico ou profissional de saúde antes de iniciar qualquer tratamento com fitoterápicos,
+            <Bold>Consulta médica:</Bold> É fundamental consultar um médico ou profissional de saúde antes de iniciar qualquer tratamento com fitoterápicos,
             pois eles podem interagir com outros medicamentos e causar efeitos colaterais.
           </p><br></br>
           <p>
-            Qualidade dos produtos: Opte por produtos de marcas confiáveis e com registro na Anvisa,
+            <Bold>Qualidade dos produtos:</Bold> Opte por produtos de marcas confiáveis e com registro na Anvisa,
             garantindo a qualidade e a segurança dos fitoterápicos.
           </p><br></br>
-          <p>Paciência: Os resultados do tratamento com fitoterápicos podem levar algumas semanas para serem observados.</p>
+          <p><Bold>Paciência:</Bold> Os resultados do tratamento com fitoterápicos podem levar algumas semanas para serem observados.</p>
         </Accordion>
         <SectionDescription>
           Lembre-se: Os fitoterápicos não substituem o acompanhamento médico e
@@ -464,46 +452,46 @@ function App() {
         </SectionHeader>
         <Accordion title="Macronutrientes Essenciais">
           <p>
-            Cálcio e Vitamina D: Essenciais para a saúde óssea, prevenindo a osteoporose, que é mais comum na menopausa.
+            <Bold>Cálcio e Vitamina D:</Bold> Essenciais para a saúde óssea, prevenindo a osteoporose, que é mais comum na menopausa.
             Fontes: leite e derivados, vegetais de folhas verdes escuras, leguminosas, peixes gordurosos e a exposição solar.
           </p><br></br>
           <p>
-            Proteínas: Importantes para a manutenção da massa muscular, que tende a diminuir com a idade.
+            <Bold>Proteínas:</Bold> Importantes para a manutenção da massa muscular, que tende a diminuir com a idade.
             Fontes: carnes magras, peixes, ovos, leguminosas, grãos integrais e derivados de leite.
           </p><br></br>
-          <p>Carboidratos: Fornecem energia e devem ser prioritariamente complexos, presentes em frutas, legumes, verduras e grãos integrais.</p>
+          <p><Bold>Carboidratos:</Bold> Fornecem energia e devem ser prioritariamente complexos, presentes em frutas, legumes, verduras e grãos integrais.</p>
         </Accordion>
         <Accordion title="Micronutrientes e Outros Nutrientes">
           <p>
-            Fitoestrogênios: Compostos encontrados em plantas que mimetizam o efeito do estrogênio no organismo,
+            <Bold>Fitoestrogênios:</Bold> Compostos encontrados em plantas que mimetizam o efeito do estrogênio no organismo,
             podendo aliviar alguns sintomas da menopausa. Fontes: soja, linhaça, grãos integrais, frutas vermelhas e legumes.
           </p><br></br>
           <p>
-            Ômega-3: Ajuda a reduzir a inflamação e o risco de doenças cardiovasculares.
+            <Bold>Ômega-3:</Bold> Ajuda a reduzir a inflamação e o risco de doenças cardiovasculares.
             Fontes: peixes gordurosos (salmão, sardinha), linhaça e chia.
           </p><br></br>
           <p>
-            Fibras: Promovem a saciedade, regulam o intestino e ajudam a controlar os níveis de açúcar no sangue.
+            <Bold>Fibras:</Bold> Promovem a saciedade, regulam o intestino e ajudam a controlar os níveis de açúcar no sangue.
             Fontes: frutas, legumes, verduras e grãos integrais.
           </p><br></br>
           <p>
-            Vitamina B12: Importante para a saúde do sistema nervoso.
+            <Bold>Vitamina B12:</Bold> Importante para a saúde do sistema nervoso.
             Fontes: carnes, peixes, ovos, leite e derivados.
           </p>
         </Accordion>
         <Accordion title="Padrões Alimentares Benéficos">
           <p>
-            Dieta Mediterrânea: Rica em frutas, legumes, verduras, cereais integrais, azeite de oliva, peixes e leguminosas,
+            <Bold>Dieta Mediterrânea:</Bold> Rica em frutas, legumes, verduras, cereais integrais, azeite de oliva, peixes e leguminosas,
             que é considerada uma das mais saudáveis e pode ajudar a prevenir diversas doenças.
           </p><br></br>
           <p>
-            Alimentação Cardioprotetora: Prioriza alimentos que ajudam a reduzir o risco de doenças cardiovasculares,
+            <Bold>Alimentação Cardioprotetora:</Bold> Prioriza alimentos que ajudam a reduzir o risco de doenças cardiovasculares,
             como frutas, legumes, verduras, grãos integrais, peixes e aves.
           </p><br></br>
-          <p>Restrição Calórica: Manter um peso saudável é fundamental para prevenir diversas doenças, incluindo diabetes e doenças cardiovasculares.</p>
+          <p><Bold>Restrição Calórica:</Bold> Manter um peso saudável é fundamental para prevenir diversas doenças, incluindo diabetes e doenças cardiovasculares.</p>
           <br></br>
           <p>
-            Uso do sal de ervas: Para reduzir o consumo do sódio e prevenir hipertensão. Uma receita básica leva
+            <Bold>Uso do sal de ervas:</Bold> Para reduzir o consumo do sódio e prevenir hipertensão. Uma receita básica leva
             os seguintes ingredientes: 1/2 xícara de sal marinho grosso, 1/4 xícara de alecrim seco, 1/4 xícara de orégano seco,
             1/4 xícara de manjericão seco.
           </p>
@@ -514,9 +502,9 @@ function App() {
           </p>
         </Accordion>
         <Accordion title="Outros Cuidados">
-          <p>Hidratação: Beber bastante água ao longo do dia é essencial para manter o organismo funcionando corretamente.</p><br></br>
+          <p><Bold>Hidratação:</Bold> Beber bastante água ao longo do dia é essencial para manter o organismo funcionando corretamente.</p><br></br>
           <p>
-            Moderação no consumo de alimentos processados e bebidas alcoólicas: Esses alimentos são ricos em açúcares,
+            <Bold>Moderação no consumo de alimentos processados e bebidas alcoólicas:</Bold> Esses alimentos são ricos em açúcares,
             sódio e gordura saturada, que podem prejudicar a saúde.
           </p>
         </Accordion>
@@ -552,35 +540,35 @@ function App() {
           </SectionDescription>
         </SectionHeader>
         <Accordion title="Exercícios Aeróbicos">
-          <p>Caminhada: Uma das atividades mais acessíveis e eficazes, a caminhada fortalece o coração, ajuda a controlar o peso e melhora a disposição.</p><br></br>
-          <p>Natação: De baixo impacto, a natação trabalha todo o corpo, alivia as dores nas articulações e é excelente para a saúde cardiovascular.</p><br></br>
-          <p>Ciclismo: Fortalece as pernas, melhora a resistência e pode ser praticado em diferentes intensidades.</p>
+          <p><Bold>Caminhada:</Bold> Uma das atividades mais acessíveis e eficazes, a caminhada fortalece o coração, ajuda a controlar o peso e melhora a disposição.</p><br></br>
+          <p><Bold>Natação:</Bold> De baixo impacto, a natação trabalha todo o corpo, alivia as dores nas articulações e é excelente para a saúde cardiovascular.</p><br></br>
+          <p><Bold>Ciclismo:</Bold> Fortalece as pernas, melhora a resistência e pode ser praticado em diferentes intensidades.</p>
         </Accordion>
         <Accordion title="Treinamento de Força">
-          <p>Musculação: Essencial para fortalecer os ossos e prevenir a osteoporose, comum na menopausa.</p><br></br>
-          <p>Pilates: Combina força, flexibilidade e alongamento, melhorando a postura e a consciência corporal.</p><br></br>
-          <p>Yoga: Além de fortalecer os músculos, a yoga promove o relaxamento e o bem-estar mental.</p>
+          <p><Bold>Musculação:</Bold> Essencial para fortalecer os ossos e prevenir a osteoporose, comum na menopausa.</p><br></br>
+          <p><Bold>Pilates:</Bold> Combina força, flexibilidade e alongamento, melhorando a postura e a consciência corporal.</p><br></br>
+          <p><Bold>Yoga:</Bold> Além de fortalecer os músculos, a yoga promove o relaxamento e o bem-estar mental.</p>
         </Accordion>
         <Accordion title="Atividades de Impacto Moderado">
-          <p>Dança: Divertida e eficaz, a dança trabalha diversos grupos musculares e melhora a coordenação.</p><br></br>
-          <p>Hidroginástica: De baixo impacto, a hidroginástica é ideal para quem busca um exercício mais suave, mas eficaz.</p>
+          <p><Bold>Dança:</Bold> Divertida e eficaz, a dança trabalha diversos grupos musculares e melhora a coordenação.</p><br></br>
+          <p><Bold>Hidroginástica:</Bold> De baixo impacto, a hidroginástica é ideal para quem busca um exercício mais suave, mas eficaz.</p>
         </Accordion>
         <Accordion title="Por que essas atividades são tão importantes?">
-          <p>Fortalecimento ósseo: Aumenta a densidade mineral óssea, prevenindo a osteoporose.</p><br></br>
-          <p>Melhora da força muscular: Aumenta a força e a resistência muscular, prevenindo quedas e fraturas.</p><br></br>
-          <p>Controle do peso: Auxilia na perda de peso e na manutenção do peso ideal.</p><br></br>
-          <p>Redução do estresse: Libera endorfinas, hormônios que proporcionam bem-estar e reduzem o estresse.</p><br></br>
-          <p>Melhora da qualidade do sono: A prática regular de exercícios contribui para um sono mais reparador.</p><br></br>
-          <p>Proteção cardiovascular: Reduz o risco de doenças cardiovasculares.</p>
+          <p><Bold>Fortalecimento ósseo:</Bold> Aumenta a densidade mineral óssea, prevenindo a osteoporose.</p><br></br>
+          <p><Bold>Melhora da força muscular:</Bold> Aumenta a força e a resistência muscular, prevenindo quedas e fraturas.</p><br></br>
+          <p><Bold>Controle do peso:</Bold> Auxilia na perda de peso e na manutenção do peso ideal.</p><br></br>
+          <p><Bold>Redução do estresse:</Bold> Libera endorfinas, hormônios que proporcionam bem-estar e reduzem o estresse.</p><br></br>
+          <p><Bold>Melhora da qualidade do sono:</Bold> A prática regular de exercícios contribui para um sono mais reparador.</p><br></br>
+          <p><Bold>Proteção cardiovascular:</Bold> Reduz o risco de doenças cardiovasculares.</p>
         </Accordion>
         <Accordion title="Recomendações">
           <p>
-            Inicie de forma gradual: Consulte um profissional de educação física para montar um programa de exercícios adequado
+            <Bold>Inicie de forma gradual:</Bold> Consulte um profissional de educação física para montar um programa de exercícios adequado
             às suas necessidades e condições físicas.
           </p><br></br>
-          <p>Seja consistente: Pratique atividades físicas regularmente, pelo menos 30 minutos por dia, na maioria dos dias da semana.</p><br></br>
-          <p>Varie as atividades: Alterne os tipos de exercícios para evitar a rotina e manter a motivação.</p><br></br>
-          <p>Ouça seu corpo: Respeite seus limites e pare se sentir dor.</p>
+          <p><Bold>Seja consistente:</Bold> Pratique atividades físicas regularmente, pelo menos 30 minutos por dia, na maioria dos dias da semana.</p><br></br>
+          <p><Bold>Varie as atividades:</Bold> Alterne os tipos de exercícios para evitar a rotina e manter a motivação.</p><br></br>
+          <p><Bold>Ouça seu corpo:</Bold> Respeite seus limites e pare se sentir dor.</p>
         </Accordion>
         <SectionDescription>
           Lembre-se: A atividade física é um investimento na sua saúde e
@@ -608,29 +596,31 @@ function App() {
         </SectionHeader>
         <Accordion title="Principais cuidados">
           <p>
-            Lubrificação: O ressecamento vaginal é um dos sintomas mais comuns da menopausa e pode causar desconforto durante a relação sexual.
+            <Bold>Lubrificação:</Bold> O ressecamento vaginal é um dos sintomas mais comuns da menopausa e pode causar desconforto durante a relação sexual.
             O uso de lubrificantes à base de água é altamente recomendado para reduzir o atrito e aumentar o prazer.
           </p><br></br>
           <p>
-            Hidratação vaginal: Além dos lubrificantes, hidratantes vaginais podem ajudar a manter a umidade da região e aliviar a secura.
+            <Bold>Hidratação vaginal:</Bold> Além dos lubrificantes, hidratantes vaginais podem ajudar a manter a umidade da região e aliviar a secura.
             Comunicação: É fundamental conversar com o parceiro sobre as mudanças que estão acontecendo no seu corpo e sobre suas necessidades.
             A comunicação aberta e honesta é a chave para uma vida sexual satisfatória.
           </p><br></br>
-          <p>Exploração: A menopausa pode ser um momento para redescobrir a própria sexualidade e explorar novas formas de prazer.</p><br></br>
-          <p>Experimentar diferentes posições, carícias e brinquedos sexuais pode tornar a relação sexual mais interessante e prazerosa.</p><br></br>
-          <p>Cuidados com a higiene: Manter a higiene íntima é essencial para prevenir infecções e garantir o conforto durante a relação sexual.</p><br></br>
           <p>
-            Acompanhamento médico: Consulte seu ginecologista para avaliar a necessidade de tratamentos hormonais ou outros recursos que possam auxiliar
+            <Bold>Exploração:</Bold> A menopausa pode ser um momento para redescobrir a própria sexualidade e explorar novas formas de prazer.
+            Experimentar diferentes posições, carícias e brinquedos sexuais pode tornar a relação sexual mais interessante e prazerosa.
+          </p><br></br>
+          <p><Bold>Cuidados com a higiene:</Bold> Manter a higiene íntima é essencial para prevenir infecções e garantir o conforto durante a relação sexual.</p><br></br>
+          <p>
+            <Bold>Acompanhamento médico:</Bold> Consulte seu ginecologista para avaliar a necessidade de tratamentos hormonais ou outros recursos que possam auxiliar
             no alívio dos sintomas da menopausa e melhorar a vida sexual.
           </p>
         </Accordion>
         <Accordion title="Outras dicas importantes">
-          <p>Relaxamento: Tente criar um ambiente relaxante e propício para o prazer, livre de distrações e preocupações.</p><br></br>
+          <p><Bold>Relaxamento:</Bold> Tente criar um ambiente relaxante e propício para o prazer, livre de distrações e preocupações.</p><br></br>
           <p>
-            Autocuidado: Cuide da sua saúde física e mental. Uma boa alimentação, prática de exercícios físicos e sono de qualidade
+            <Bold>Autocuidado:</Bold> Cuide da sua saúde física e mental. Uma boa alimentação, prática de exercícios físicos e sono de qualidade
             contribuem para o bem-estar geral e para uma vida sexual mais satisfatória.
           </p><br></br>
-          <p>Aceitação: Aceite as mudanças que ocorrem no seu corpo e não tenha vergonha de buscar ajuda.</p><br></br>
+          <p><Bold>Aceitação:</Bold> Aceite as mudanças que ocorrem no seu corpo e não tenha vergonha de buscar ajuda.</p><br></br>
           <p>
             É importante lembrar que a menopausa não é uma doença, mas sim uma fase natural da vida da mulher.
             Com os cuidados adequados, é possível manter uma vida sexual ativa e prazerosa.
@@ -662,37 +652,37 @@ function App() {
         </SectionHeader>
         <Accordion title="Entendendo as Alterações Hormonais e suas Consequências">
           <p>
-            Oscilações Hormonais: As variações nos níveis de hormônios como o estrogênio e a progesterona podem desencadear uma série de sintomas emocionais,
+            <Bold>Oscilações Hormonais:</Bold> As variações nos níveis de hormônios como o estrogênio e a progesterona podem desencadear uma série de sintomas emocionais,
             como irritabilidade, ansiedade, tristeza e dificuldade de concentração.
           </p><br></br>
-          <p>Impacto na Autoestima: As mudanças corporais e a sensação de perda da fertilidade podem afetar a autoestima e a autoimagem da mulher.</p>
+          <p><Bold>Impacto na Autoestima:</Bold> As mudanças corporais e a sensação de perda da fertilidade podem afetar a autoestima e a autoimagem da mulher.</p>
         </Accordion>
         <Accordion title="Estratégias para Promover o Bem-Estar Emocional">
           <p>
-            Terapia: A psicoterapia pode ser uma ferramenta poderosa para lidar com as emoções,
+            <Bold>Terapia:</Bold> A psicoterapia pode ser uma ferramenta poderosa para lidar com as emoções,
             desenvolver estratégias de enfrentamento e melhorar a qualidade de vida.
           </p><br></br>
           <p>
-            Grupos de Apoio: Compartilhar experiências com outras mulheres que estão passando pela mesma fase pode ser muito reconfortante
+            <Bold>Grupos de Apoio:</Bold> Compartilhar experiências com outras mulheres que estão passando pela mesma fase pode ser muito reconfortante
             e oferecer novas perspectivas.
           </p><br></br>
-          <p>Atividades Relaxantes: Práticas como yoga, meditação e tai chi podem ajudar a reduzir o estresse e promover o relaxamento.</p><br></br>
-          <p>Exercícios Físicos: A atividade física regular libera endorfinas, que são neurotransmissores que promovem o bem-estar e combatem a depressão.</p><br></br>
+          <p><Bold>Atividades Relaxantes:</Bold> Práticas como yoga, meditação e tai chi podem ajudar a reduzir o estresse e promover o relaxamento.</p><br></br>
+          <p><Bold>Exercícios Físicos:</Bold> A atividade física regular libera endorfinas, que são neurotransmissores que promovem o bem-estar e combatem a depressão.</p><br></br>
           <p>
-            Alimentação Saudável: Uma dieta equilibrada fornece os nutrientes necessários para o bom funcionamento do organismo e
+            <Bold>Alimentação Saudável:</Bold> Uma dieta equilibrada fornece os nutrientes necessários para o bom funcionamento do organismo e
             pode contribuir para a melhoria do humor.
           </p><br></br>
           <p>
-            Higiene do Sono: Priorizar o sono é fundamental para a saúde mental.
+            <Bold>Higiene do Sono:</Bold> Priorizar o sono é fundamental para a saúde mental.
             Estabeleça horários regulares para dormir e acordar. Crie uma rotina relaxante e um ambiente propício antes de dormir e evite estimulantes, como
             o uso de eletrônicos nas horas que antecedem o sono, cafeína, álcool, e nicotina.
           </p>
         </Accordion>
         <Accordion title="Reconhecendo os Sinais de Alerta">
-          <p>Mudanças de Humor Intensas: Sentimentos de tristeza profunda, desânimo e apatia que persistem por longos períodos.</p><br></br>
-          <p>Ansiedade Excessiva: Dificuldade em se concentrar, irritabilidade constante, insônia e preocupações excessivas.</p><br></br>
-          <p>Isolamento Social: Evitar contato com amigos e familiares, perdendo o interesse em atividades que antes eram prazerosas.</p><br></br>
-          <p>Pensamentos Negativos: Dificuldade em encontrar prazer nas coisas, pensamentos pessimistas e ideias de inutilidade.</p>
+          <p><Bold>Mudanças de Humor Intensas:</Bold> Sentimentos de tristeza profunda, desânimo e apatia que persistem por longos períodos.</p><br></br>
+          <p><Bold>Ansiedade Excessiva:</Bold> Dificuldade em se concentrar, irritabilidade constante, insônia e preocupações excessivas.</p><br></br>
+          <p><Bold>Isolamento Social:</Bold> Evitar contato com amigos e familiares, perdendo o interesse em atividades que antes eram prazerosas.</p><br></br>
+          <p><Bold>Pensamentos Negativos:</Bold> Dificuldade em encontrar prazer nas coisas, pensamentos pessimistas e ideias de inutilidade.</p>
         </Accordion>
         <Accordion title="Quando Procurar Ajuda Profissional?">
           Se você estiver enfrentando dificuldades para lidar com as emoções,
@@ -729,34 +719,34 @@ function App() {
           </SectionDescription>
         </SectionHeader>
         <Accordion title="Mito 1: A menopausa é uma doença">
-          <p>Verdade: A menopausa é uma fase da vida, não uma doença.</p><br></br>
+          <p><Bold>Verdade:</Bold> A menopausa é uma fase da vida, não uma doença.</p><br></br>
           <p>É a transição natural do período reprodutivo para o não reprodutivo, marcada pela cessação dos ciclos menstruais.</p>
         </Accordion>
         <Accordion title="Mito 2: A menopausa causa envelhecimento precoce">
-          <p>Verdade: A menopausa coincide com o processo natural de envelhecimento, mas não o acelera.</p><br></br>
+          <p><Bold>Verdade:</Bold> A menopausa coincide com o processo natural de envelhecimento, mas não o acelera.</p><br></br>
           <p>As mudanças observadas nessa fase estão relacionadas à diminuição dos hormônios sexuais e não à idade em si.</p>
         </Accordion>
         <Accordion title="Mito 3: Todas as mulheres experimentam os mesmos sintomas da menopausa">
-          <p>Verdade: Os sintomas da menopausa variam muito de mulher para mulher, e algumas podem não apresentar nenhum sintoma significativo.</p><br></br>
+          <p><Bold>Verdade:</Bold> Os sintomas da menopausa variam muito de mulher para mulher, e algumas podem não apresentar nenhum sintoma significativo.</p><br></br>
           <p>Os mais comuns incluem ondas de calor, suores noturnos, alterações de humor, dificuldade para dormir e secura vaginal.</p>
         </Accordion>
         <Accordion title="Mito 4: A reposição hormonal é a única solução para os sintomas da menopausa">
-          <p>Verdade: A reposição hormonal (RH) pode ser uma opção para aliviar alguns sintomas, mas não é indicada para todas as mulheres e apresenta riscos.</p><br></br>
+          <p><Bold>Verdade:</Bold> A reposição hormonal (RH) pode ser uma opção para aliviar alguns sintomas, mas não é indicada para todas as mulheres e apresenta riscos.</p><br></br>
           <p>Existem outras alternativas, como tratamentos naturais, mudanças no estilo de vida e terapias não hormonais.</p>
         </Accordion>
         <Accordion title="Mito 5: A libido diminui drasticamente na menopausa">
-          <p>Verdade: A libido pode diminuir devido a fatores físicos e emocionais, mas não é uma regra.</p><br></br>
+          <p><Bold>Verdade:</Bold> A libido pode diminuir devido a fatores físicos e emocionais, mas não é uma regra.</p><br></br>
           <p>
             A sexualidade é um aspecto multifatorial e pode ser influenciada por diversos fatores,
             como a relação com o parceiro, a autoestima e a saúde em geral.
           </p>
         </Accordion>
         <Accordion title="Mito 6: A menopausa causa depressão">
-          <p>Verdade: Embora as alterações hormonais possam contribuir para alterações de humor, a menopausa não causa necessariamente depressão.</p><br></br>
+          <p><Bold>Verdade:</Bold> Embora as alterações hormonais possam contribuir para alterações de humor, a menopausa não causa necessariamente depressão.</p><br></br>
           <p>A depressão é uma doença complexa com diversas causas, e o tratamento deve ser individualizado.</p>
         </Accordion>
         <Accordion title="Mito 7: A menopausa torna as mulheres irritáveis">
-          <p>Verdade: As flutuações hormonais podem causar irritabilidade, mas nem todas as mulheres experimentam esse sintoma.</p><br></br>
+          <p><Bold>Verdade:</Bold> As flutuações hormonais podem causar irritabilidade, mas nem todas as mulheres experimentam esse sintoma.</p><br></br>
           <p>É importante lembrar que a irritabilidade pode ter outras causas, como estresse, cansaço e problemas pessoais.</p>
         </Accordion>
         <Accordion title="Como a literatura científica elucida esses mitos?">
@@ -801,6 +791,27 @@ function App() {
           fileToDownload={Info2}
           iconRef={""} 
           buttonLabel={"Faça o download"}
+        />
+        <Card 
+          title={"Farmacopeia Brasileira"} 
+          description={"A Farmacopeia Brasileira é o código oficial farmacêutico do país, onde se estabelecem os requisitos mínimos de qualidade para insumos farmacêuticos, medicamentos e produtos para a saúde."} 
+          fileToDownload="https://www.gov.br/anvisa/pt-br/assuntos/farmacopeia/farmacopeia-brasileira/6a-edicao-volume-2"
+          iconRef={""} 
+          buttonLabel={"Siga para o site"}
+        />
+        <Card 
+          title={"Manual de Atenção à Mulher"} 
+          description={"O Manual Atenção Integral à Saúde da Mulher no Climatério/Menopausa elaborado pela Área Técnica de Saúde da Mulher do Ministério da Saúde para qualificar atenção às mulheres nessa fase da vida."} 
+          fileToDownload="https://bvsms.saude.gov.br/bvs/publicacoes/manual_atencao_mulher_climaterio.pdf"
+          iconRef={""} 
+          buttonLabel={"Siga para o site"}
+        />
+        <Card 
+          title={"Monografia da espécie Morus nigra L."} 
+          description={"Serve para reunir e explicar informações sobre essa planta, incluindo suas características, habitat, propriedades nutricionais e medicinais. Auxilia a entender seus benefícios para a saúde e aplicações na alimentação e na medicina."} 
+          fileToDownload="https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/consultas-publicas/2017/arquivos/MonografiaMorusnigra.pdf"
+          iconRef={""} 
+          buttonLabel={"Siga para o site"}
         />
         </InfoGrid>
       </ResourcesContainer>

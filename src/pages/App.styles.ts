@@ -89,3 +89,7 @@ export const AccordionContainer = styled(Container)`
   padding: 80px 50px;
   gap: 48px;
 `;
+
+export const Bold = styled.b`
+  font-weight: bold;
+`;

@@ -114,7 +114,7 @@ function App() {
         </Accordion>
         <Accordion title="O que é climatério?">
             O climatério há uma diminuição das funções ovarianas, fazendo com que os ciclos menstruais se tornem irregulares, até cessarem por completo.
-            O climatério inicia antes e se estende durante e até após a menopausa, por volta dos 40 anos e pode se estender até os 65 anos.
+            O climatério inicia antes da menopausa, por volta dos 40 anos, e se estende até depois dela, até os 65 anos.
         </Accordion>
         <Accordion title="Quais são os sintomas mais comuns?">
             <p>Os sintomas mais comuns no climatério são: Menstruação irregular, Ondas de calor, Alteração no sono, Oscilações de humor.</p><br></br>
@@ -135,10 +135,10 @@ function App() {
           <p><Bold>Causas:</Bold> Envelhecimento fisiológico dos ovários.</p>
         </Accordion>
         <Accordion title="Menopausa Induzida">
-            <p><Bold>O que é:</Bold> Ocorre precocemente devido a fatores externos, como cirurgias ou tratamentos médicos.</p>
-            <p><Bold>Causas:</Bold></p><br></br>
-            <p><Bold>-Cirúrgica:</Bold> remoção dos ovários (ooforectomia) por razões médicas;</p>
-            <p><Bold>-Tratamentos:</Bold> quimioterapia, radioterapia, ou outros tratamentos que danificam os ovários.</p>
+          <p><Bold>O que é:</Bold> Ocorre precocemente devido a fatores externos, como cirurgias ou tratamentos médicos.</p>
+          <p><Bold>Causas:</Bold></p><br></br>
+          <p><Bold>-Cirúrgica:</Bold> remoção dos ovários (ooforectomia) por razões médicas;</p>
+          <p><Bold>-Tratamentos:</Bold> quimioterapia, radioterapia, ou outros tratamentos que danificam os ovários.</p>
         </Accordion>
         <Accordion title="Menopausa Precoce">
           <p><Bold>O que é:</Bold> Ocorre antes dos 40 anos, tanto de forma natural quanto induzida.</p>

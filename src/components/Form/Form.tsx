@@ -34,14 +34,9 @@ const Form: React.FC = () => {
   };
 
   const onSubmit = () => {
-    // TBD
     console.log("Form submitted:", formData);
-    console.log(
-      "ta em risco?",
-      Number(formData.heatWaves) + Number(formData.paresthesia)
-    );
 
-    if (Number(formData.heatWaves) + Number(formData.paresthesia) + Number(formData.insomnia) + Number(formData.nervousness)
+     if (Number(formData.heatWaves) + Number(formData.paresthesia) + Number(formData.insomnia) + Number(formData.nervousness)
        + Number(formData.depressiveness) + Number(formData.fatigue) + Number(formData.jointNmusclePain) + Number(formData.cephalalgia)
        + Number(formData.palpitations) + Number(formData.tinnitus) <= 19) {
       window.location.hash = "#questions";
@@ -445,7 +440,7 @@ const Form: React.FC = () => {
         </RadioContainer>
       </FormField>
       <FormField>
-        <Button label="Envie" onClick={handleSubmitClick} primary />
+        <Button label="Enviar" onClick={handleSubmitClick} primary />
       </FormField>
     </FormWrapper>
   );

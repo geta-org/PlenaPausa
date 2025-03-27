@@ -59,8 +59,7 @@ function App() {
           <SectionDescription>
             <p>Nosso formulário para verificação do estado da Menopausa.</p>
             <p>
-              Insira suas informações e descubra mais sobre o que você pode
-              passar por, e quem pode ajudar.
+              Insira suas informações e descubra mais sobre os possíveis sintomas, e quem pode ajudar.
             </p>
           </SectionDescription>
           <SectionDescription>
@@ -131,7 +130,7 @@ function App() {
           <SectionTitle>Os Principais Tipos de Menopausa</SectionTitle>
         </SectionHeader>
         <Accordion title="Menopausa Natural">
-          <p><Bold>O que é:</Bold> É o tipo mais comum, ocorrendo espontaneamente entre os 45 e 55 anos, devido à depleção natural dos óvulos nos ovários.</p>
+          <p><Bold>O que é:</Bold> É o tipo mais comum, ocorrendo espontaneamente entre os 45 e 55 anos, devido à esgotamento natural dos óvulos nos ovários.</p>
           <p><Bold>Causas:</Bold> Envelhecimento fisiológico dos ovários.</p>
         </Accordion>
         <Accordion title="Menopausa Induzida">
@@ -172,11 +171,11 @@ function App() {
          Pode ser na forma de anel, creme ou pessário introduzido na vagina.
         </Accordion>
         <Accordion title="Terapêutica hormonal sistêmica">
-         Disponível em comprimido, patch transdérmico, anel, gel ou crèmeneste tratamento doses mais elevadas de estrogênio/progestagênio são absorvidas em todo o corpo.
+         Disponível em comprimido, patch transdérmico, anel, gel ou creme tratamento doses mais elevadas de estrogênio/progesterona são absorvidas em todo o corpo.
         </Accordion>
         <Accordion title="Práticas Integrativas e Complementares (PICS)">
          Podem ser uma estratégia de cuidado para ajudar a aliviar os sintomas da menopausa.
-         Algumas PICS que podem ser utilizadas para este fim são:
+         Algumas práticas que podem ser utilizadas para este fim são:
          Acupuntura, Fitoterapia, Hipnose, Aromaterapia, Moxabustão, Yoga, Meditação, Respiração guiada
         </Accordion>
         <hr />
@@ -203,7 +202,7 @@ function App() {
            Ele é o especialista em saúde reprodutiva feminina e pode:
          </p><br></br>
          <p>
-           <Bold>Diagnosticar a menopausa:</Bold> Através de exames clínicos e de laboratório,
+           <Bold>Diagnóstico da menopausa:</Bold> Através de exames clínicos e de laboratório,
            o ginecologista confirmará se você está passando pela menopausa e avaliará a intensidade dos sintomas.
          </p><br></br>
          <p>
@@ -211,7 +210,7 @@ function App() {
            o ginecologista poderá indicar tratamentos como a terapia de reposição hormonal (TRH),
            medicamentos para aliviar as ondas de calor e outros tratamentos.
          </p><br></br>
-         <p><Bold>Acompanhamento:</Bold> O ginecologista realizará acompanhamentos regulares para monitorar sua saúde e ajustar o tratamento, se necessário.</p>
+         <p><Bold>Acompanhar:</Bold> O ginecologista realizará acompanhamentos regulares para monitorar sua saúde e ajustar o tratamento, se necessário.</p>
         </Accordion>
         <Accordion title="Endocrinologista">
          <p>O endocrinologista é especialista em hormônios. Ele pode ser consultado em casos mais complexos, como:</p><br></br>
@@ -224,7 +223,7 @@ function App() {
          <p><Bold>Controlar os sintomas:</Bold> Uma dieta adequada pode ajudar a controlar sintomas como ondas de calor, insônia e alterações de humor.</p>
         </Accordion>
         <Accordion title="Fisioterapeuta">
-          <p>A fisioterapia pode ser muito benéfica para aliviar os sintomas da menopausa, como:</p><br></br>
+          <p>A fisioterapia pode ser muito benéfica para aliviar os sintomas da menopausa, com:</p><br></br>
           <p>
             <Bold>Fortalecimento muscular:</Bold> A fisioterapia pode ajudar a fortalecer os músculos do assoalho pélvico,
             melhorando a incontinência urinária e o prazer sexual.
@@ -237,7 +236,7 @@ function App() {
          ele indica o uso de remédios naturais à base de plantas e ervas medicinais que podem ser utilizadas para ajudar a aliviar os sintomas da menopausa de forma segura e com devido acompanhamento.
         </Accordion>
         <Accordion title="Psicólogo">
-         <p>As mudanças hormonais da menopausa podem afetar o humor e o bem-estar emocional. O psicólogo pode te ajudar a:</p><br></br>
+         <p>As mudanças hormonais da menopausa podem afetar o humor e o bem-estar emocional. O psicólogo pode te ajudar em:</p><br></br>
          <p><Bold>Lidar com as emoções:</Bold> A terapia pode te ajudar a lidar com as mudanças emocionais e a desenvolver estratégias para lidar com o estresse.</p><br></br>
          <p><Bold>Melhorar a qualidade de vida:</Bold> O psicólogo pode te ensinar técnicas de relaxamento e meditação para melhorar sua qualidade de vida.</p>
         </Accordion>
@@ -278,12 +277,12 @@ function App() {
             como suores noturnos e irritabilidade.
           </p><br></br>
           <p><Bold>-Ginseng:</Bold> Ajuda a reduzir a fadiga e a melhorar a concentração, sintomas comuns na menopausa.</p><br></br>
-          <p><Bold>-Crataegus (Espinheiro-alvar):</Bold> Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
+          <p><Bold>-Crataegus (Espinheiro-branco):</Bold> Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
           <p>
             <Bold>-Cimicifuga (Ervilhas-de-são-cristóvão):</Bold> Também conhecida como Erva-de-são-cristóvão,
             possui fitoestrógenos que podem ajudar a aliviar sintomas da menopausa.
           </p><br></br>
-          <p><Bold>-Vitex agnus-castus (Agnus castus):</Bold> Conhecida por seus efeitos equilibradores hormonais.</p><br></br>
+          <p><Bold>-Vitex agnus-castus (Agnocasto):</Bold> Conhecida por favorecer equilíbrio hormonal.</p><br></br>
           <p><Bold>-Angelica sinensis (Dong Quai):</Bold> Contém fitoestrogênios e é usada tradicionalmente para equilibrar os hormônios.</p><br></br>
           <p><Bold>-Tribulus terrestris (Tribulus):</Bold> Possui fitoestrógenos e é usada em suplementos para a saúde hormonal.</p><br></br>
           <p><Bold>-Brócolis:</Bold> Contém fitoestrogênios que podem ajudar a equilibrar os níveis hormonais.</p><br></br>
@@ -429,11 +428,6 @@ function App() {
             A menopausa é marcada por uma diminuição significativa dos níveis de estrogênio,
             um hormônio que estabiliza o metabolismo ósseo e protege os ossos das mulheres.
             Sem o estrogênio, o processo de perda de densidade óssea acelera, tornando os ossos mais frágeis.
-          </p><br></br>
-          <p>
-            A principal diferença entre osteopenia e osteoporose é a quantidade de massa óssea perdida.
-            A osteopenia é uma condição pré-osteoporótica, que pode ser revertida ou retardada se detectada cedo.
-            A osteoporose, por sua vez, é uma doença sem cura e difícil de reverter.
           </p><br></br>
           <p>O diagnóstico é feito por meio da densitometria óssea (DMO), um exame que avalia a densidade mineral óssea (DMO)</p><br></br>
           <p>-Osteopenia: Até 25% de perda de massa óssea</p>

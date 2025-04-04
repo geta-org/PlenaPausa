@@ -30,7 +30,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
   font-family: "Just Me Again Down Here", sans-serif;
   text-rendering: optimizeSpeed;
-  font-size: 64px;
+  font-size: 52px;
   color: white;
   margin-top: -18px;
 `;

@@ -37,8 +37,8 @@ function App() {
           height={141}
         />
         <TitleContainer>
-          <Title>MENOSPAUSA</Title>
-          <Subtitle>Maisvida</Subtitle>
+          <Title>PLENAPAUSA</Title>
+          <Subtitle>Com Mais vida</Subtitle>
         </TitleContainer>
       </Hero>
       <AboutUs id="about-us">

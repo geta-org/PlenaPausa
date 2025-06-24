@@ -11,6 +11,7 @@ import {
   Title,
   Subtitle,
   AboutUs,
+  AboutUsImages,
   SectionHeader,
   TitleContainer,
   SectionTitle,
@@ -25,6 +26,10 @@ import QuestionLogo from "../assets/question.svg?react";
 import Monitor from "../assets/img/Agenda para monitoramento da menopausa.pdf";
 import Info1 from "../assets/img/Infographic resume.jpeg";
 import Info2 from "../assets/img/Infographic symptoms.jpeg";
+import Logo1 from "../assets/img/Logo1.jpeg";
+import Logo2 from "../assets/img/Logo2.png";
+import Logo3 from "../assets/img/Logo3.png";
+import Logo4 from "../assets/img/Logo4.png";
 
 function App() {
   return (
@@ -49,6 +54,22 @@ function App() {
             <p>do Programa Interinstitucional de Pós-Graduação em Ciências Fisiológicas da Universidade Federal de São Carlos e UNESP,</p>
             <p>com apoio do Grupo de Pesquisa de Engenharia e Ciências da Computação do Centro Universitário do Estado do Pará (CESUPA),</p>
             <p>para compartilhar Informações sobre a menopausa com conteúdo educativo sobre saúde da mulher, bem-estar e qualidade de vida.</p>
+          </SectionDescription>
+          <SectionDescription>
+            <p>Autores: <br></br><Bold>Ma. Rita Cristina Cotta Alcântara <br></br>Doutoranda no Programa Interinstitucional de Pós-graduação em Ciências Fisiológicas
+                UFSCar/UNESP (PIPGCF) </Bold></p>
+            <p><Bold><br></br>Prof. Dr. Gerson Jhonatan Rodrigues <br></br>Departamento de Ciências Fisiológicas Universidade Federal de São Carlos (UFSCar),<br></br>
+            Programa Interinstitucional em Ciências Fisiológicas UFSCar/UNESP</Bold></p>
+          </SectionDescription>
+          <AboutUsImages>
+            <img src={Logo4} /><img src={Logo1} /><img src={Logo2} /><img src={Logo3} />
+          </AboutUsImages>
+          <SectionDescription>
+            <p>O desenvolvimento do site foi feito pelo Grupo de Estudo em Tecnologia Assistiva (GETA) do CESUPA.</p>
+            <p>Coordenadora responsável: <Bold>Profa. Ma. Alessandra Natasha Alcantara Barreiros Baganha</Bold></p>
+            <p>Responsável pelo projeto: <Bold>Me. Matheus Henrique Almeida dos Santos</Bold></p>
+            <p>Alunos envolvidos: <Bold>Bernardo Gomes Brandão, Gabriel Gonçalves da Silva</Bold></p>
+            <p><br></br>Encontre-nos em <a href="https://geta.omnicesupa.com/">geta.omnicesupa.com</a></p>
           </SectionDescription>
         </SectionHeader>
         <hr />
@@ -112,8 +133,8 @@ function App() {
             Antes disso, a mulher passa por uma fase de transição chamada climatério, que pode incluir diversos sintomas. A menopausa ocorre, em média, aos 50 anos.
         </Accordion>
         <Accordion title="O que é climatério?">
-            O climatério há uma diminuição das funções ovarianas, fazendo com que os ciclos menstruais se tornem irregulares, até cessarem por completo.
-            O climatério inicia antes da menopausa, por volta dos 40 anos, e se estende até depois dela, até os 65 anos.
+            No climatério há uma diminuição das funções ovarianas, fazendo com que os ciclos menstruais se tornem irregulares, até cessarem por completo.
+            O climatério inicia antes da menopausa, por volta dos 40 anos, podendo se estender até depois dela, até os 65 anos.
         </Accordion>
         <Accordion title="Quais são os sintomas mais comuns?">
             <p>Os sintomas mais comuns no climatério são: Menstruação irregular, Ondas de calor, Alteração no sono, Oscilações de humor.</p><br></br>
@@ -130,7 +151,7 @@ function App() {
           <SectionTitle>Os Principais Tipos de Menopausa</SectionTitle>
         </SectionHeader>
         <Accordion title="Menopausa Natural">
-          <p><Bold>O que é:</Bold> É o tipo mais comum, ocorrendo espontaneamente entre os 45 e 55 anos, devido à esgotamento natural dos óvulos nos ovários.</p>
+          <p><Bold>O que é:</Bold> É o tipo mais comum, ocorrendo espontaneamente entre os 45 e 55 anos, devido ao esgotamento natural dos óvulos nos ovários.</p>
           <p><Bold>Causas:</Bold> Envelhecimento fisiológico dos ovários.</p>
         </Accordion>
         <Accordion title="Menopausa Induzida">
@@ -159,8 +180,7 @@ function App() {
               substituição (THS) e tratamento hormonal da menopausa (THM).
             </p>
             <p>
-              É o tratamento que adiciona, bloqueia ou remove hormônios. Na
-              menopausa, hormônios são administradas para ajustar níveis
+              Na menopausa, hormônios são administrados para ajustar níveis
               hormonais baixos e aliviar os fogachos e outros sintomas da
               menopausa.
             </p>
@@ -171,7 +191,8 @@ function App() {
          Pode ser na forma de anel, creme ou pessário introduzido na vagina.
         </Accordion>
         <Accordion title="Terapêutica hormonal sistêmica">
-         Disponível em comprimido, patch transdérmico, anel, gel ou creme tratamento doses mais elevadas de estrogênio/progesterona são absorvidas em todo o corpo.
+         Disponível em comprimido, patch transdérmico, anel, gel ou creme. É um tratamento doses mais elevadas de estrogênio/progesterona 
+         que são absorvidas em todo o corpo.
         </Accordion>
         <Accordion title="Práticas Integrativas e Complementares (PICS)">
          Podem ser uma estratégia de cuidado para ajudar a aliviar os sintomas da menopausa.
@@ -202,7 +223,7 @@ function App() {
            Ele é o especialista em saúde reprodutiva feminina e pode:
          </p><br></br>
          <p>
-           <Bold>Diagnóstico da menopausa:</Bold> Através de exames clínicos e de laboratório,
+           <Bold>Diagnosticar:</Bold> Através de exames clínicos e de laboratório,
            o ginecologista confirmará se você está passando pela menopausa e avaliará a intensidade dos sintomas.
          </p><br></br>
          <p>
@@ -381,7 +402,7 @@ function App() {
             A gordura abdominal pode contribuir para a resistência à insulina.
           </p><br></br>
           <p>
-            Através da estimativa do Índice de Massa Corporal (IMC). É feito por meio da divisão do peso (em kg) pela altura (em metros) ao quadrado.
+            Para saber se você está no peso adequado é necessário calcular do Índice de Massa Corporal (IMC). O cáluculo é feito por meio da divisão do peso (em kg) pela altura (em metros) ao quadrado.
             A classificação da obesidade no Brasil é feita com base no Índice de Massa Corporal (IMC), de acordo com o seguinte padrão:
           </p><br></br>
           <p>Fórmula para calcular o índice de massa corporal:  IMC = peso (kg) / (altura (m) x altura (m))</p>
@@ -774,14 +795,14 @@ function App() {
         />
         <Card 
           title={"Infográfico: Entendendo a menopausa"} 
-          description={"Infográfico em formato de cartilha para descobrir compartilhar. Contém informações essenciais sobre a menopausa e suas repercussões."} 
+          description={"Infográfico em formato de cartilha para descobrir e compartilhar. Contém informações essenciais sobre a menopausa e suas repercussões."} 
           fileToDownload={Info1}
           iconRef={""} 
           buttonLabel={"Faça o download"}
         />
         <Card 
           title={"Infográfico: Sintomas da menopausa"} 
-          description={"Impactos Multissêmicos da Menopausa: sintomas e alterações corporais que podem ser acontecer e o que você pode esperar durante a menopausa."} 
+          description={"Impactos Multisistêmicos da Menopausa: sintomas e alterações corporais e o que você pode esperar durante a menopausa. (Adaptado de MONTELEONE et al, 2018)"} 
           fileToDownload={Info2}
           iconRef={""} 
           buttonLabel={"Faça o download"}
